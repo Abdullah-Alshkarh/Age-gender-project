@@ -25,7 +25,7 @@ def faceBox(faceNet,frame):
 
 
 root = Tk()
-root.geometry("1200x1500")
+root.geometry("1000x1000")
 
 faceProto = "opencv_face_detector.pbtxt"
 faceModel = "opencv_face_detector_uint8.pb"
@@ -80,7 +80,7 @@ while True:
 
     if gender == 'Male' or gender == 'Female':
         try:
-            source= 'gender/'+gender+'/'+age+'.jpg'
+            source= 'gender/'+gender+'/'+age+'.png'
             img = Image.open(source)
         except:
             print(source+'dosent exist')

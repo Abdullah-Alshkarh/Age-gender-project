@@ -1,5 +1,4 @@
 import cv2
-
 import tkinter
 from tkinter import *
 from PIL import Image, ImageTk
@@ -99,7 +98,7 @@ while True:
 
 
 
-    k=cv2.waitKey(1000)  # 1000 Milliseconds is 1 Second
+    k=cv2.waitKey(1)  # 1000 Milliseconds is 1 Second
     if k==ord('q'):
         break
     
